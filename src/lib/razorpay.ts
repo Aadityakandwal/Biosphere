@@ -1,14 +1,9 @@
 const rawKey =
   import.meta.env.VITE_RAZORPAY_KEY_ID ||
   import.meta.env.VITE_RAZORPAY_KEY ||
-  import.meta.env.RAZORPAY_KEY_ID ||
-  import.meta.env.RAZORPAY_KEY ||
-  'rzp_test_1DP5mmOlF5G5ag';
+  '';
 
-export const RAZORPAY_KEY_ID = typeof rawKey === 'string' && rawKey.trim() !== ''
-  ? rawKey.trim()
-  : 'rzp_test_1DP5mmOlF5G5ag';
-
+export const RAZORPAY_KEY_ID = typeof rawKey === 'string' ? rawKey.trim() : '';
 export const RAZORPAY_TEST_KEY_ID = RAZORPAY_KEY_ID;
 
 export function getRazorpayKeyId(): string {
