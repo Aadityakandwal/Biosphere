@@ -27,7 +27,7 @@ const STATIC_PAGES: SearchResult[] = [
   { id: 'page-free-check', type: 'page', title: 'Free Garden Check', subtitle: '45-minute on-site assessment at ₹0', badge: 'Page', url: '/free-check' },
   { id: 'page-membership', type: 'page', title: 'Care Memberships', subtitle: 'Compare Essential, Complete & Master stewardship plans', badge: 'Page', url: '/membership' },
   { id: 'page-shop', type: 'page', title: 'Garden Shop', subtitle: 'Microbial tonics, hardy plants, planters and tools', badge: 'Page', url: '/shop' },
-  { id: 'page-maps', type: 'page', title: 'Green World Explorer', subtitle: 'Find botanical gardens, local nurseries and green spaces', badge: 'Page', url: '/maps' },
+  { id: 'page-become-member', type: 'page', title: 'Become a Member', subtitle: 'Join our community of garden lovers and professional specialists', badge: 'Join Us', url: '/become-member' },
   { id: 'page-about', type: 'page', title: 'About My Gardener', subtitle: 'Our craft, organic methodology and green mission', badge: 'Page', url: '/about' },
   { id: 'page-support', type: 'page', title: 'Support & Help Desk', subtitle: 'Assistance with bookings, memberships and orders', badge: 'Page', url: '/support' },
   { id: 'page-faq', type: 'page', title: 'Frequently Asked Questions', subtitle: 'Answers on services, plans, free checks and shop', badge: 'Page', url: '/faq' },
@@ -375,7 +375,6 @@ export default function SearchModal({
             { id: 'service', label: 'Services' },
             { id: 'product', label: 'Shop' },
             { id: 'membership', label: 'Memberships' },
-            { id: 'place', label: 'Green World' },
             { id: 'page', label: 'Pages' },
           ].map((cat) => (
             <button
@@ -483,8 +482,8 @@ export default function SearchModal({
                   {[
                     { title: 'Free Garden Check', subtitle: 'Book a 45-min on-site review', url: '/free-check', badge: '₹0' },
                     { title: 'Care Memberships', subtitle: 'Essential, Complete, Master', url: '/membership', badge: 'Stewardship' },
+                    { title: 'Become a Member', subtitle: 'Join specialist & gardener team', url: '/become-member', badge: 'Join Us' },
                     { title: 'Garden Shop', subtitle: 'Bio-tonics & healthy plants', url: '/shop', badge: 'Shop' },
-                    { title: 'Green World Maps', subtitle: 'Nurseries & botanical spots', url: '/maps', badge: 'Explore' },
                   ].map((dest) => (
                     <div
                       key={dest.url}

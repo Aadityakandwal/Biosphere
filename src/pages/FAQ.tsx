@@ -104,11 +104,11 @@ const FAQS: FAQItem[] = [
     answer: 'The Garden Dashboard allows you to catalog your personal plants, track their sunlight and soil parameters, record health assessments from your gardener visits, and analyze plant symptoms with our AI scan tool.',
   },
 
-  // 9. Green World
+  // 9. Become a Member
   {
-    category: 'Green World',
-    question: 'What is the Green World explorer?',
-    answer: 'Green World is an interactive discovery tool mapping botanical gardens, verified plant nurseries, and green spaces in cities like Bengaluru, Delhi NCR, and Mumbai with directions and category filters.',
+    category: 'Become a Member',
+    question: 'How do I apply to become a gardener or specialist with My Gardener?',
+    answer: 'You can apply directly via our Become a Member application page. Fill in your background, experience, city, and botanical interests, and our team will review and get in touch.',
   },
 ];
 
@@ -122,7 +122,7 @@ const CATEGORIES = [
   'Payments',
   'Green Points',
   'Garden Dashboard',
-  'Green World',
+  'Become a Member',
 ];
 
 export default function FAQ() {

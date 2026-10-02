@@ -10,7 +10,7 @@ const navLinks = [
   { label: 'Services', to: '/services' },
   { label: 'Shop', to: '/shop' },
   { label: 'Membership', to: '/membership' },
-  { label: 'Green World', to: '/maps' },
+  { label: 'Become a Member', to: '/become-member' },
   { label: 'About', to: '/about' },
 ];
 

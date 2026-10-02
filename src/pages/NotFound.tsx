@@ -129,7 +129,7 @@ export default function NotFound() {
               <span>Care Plans</span>
             </Link>
             <Link
-              to="/maps"
+              to="/become-member"
               style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -145,7 +145,7 @@ export default function NotFound() {
               }}
             >
               <Compass size={15} style={{ color: 'var(--amber)' }} />
-              <span>Green World Maps</span>
+              <span>Become a Member</span>
             </Link>
           </div>
         </div>

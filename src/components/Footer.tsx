@@ -32,8 +32,8 @@ export default function Footer() {
           <Link to="/services">Services Catalogue</Link>
           <Link to="/free-check">Free Garden Check</Link>
           <Link to="/membership">Care Memberships</Link>
+          <Link to="/become-member">Become a Member</Link>
           <Link to="/shop">Garden Shop</Link>
-          <Link to="/maps">Green World Maps</Link>
           <Link to="/about">About My Gardener</Link>
         </div>
 

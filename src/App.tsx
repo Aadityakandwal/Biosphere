@@ -55,7 +55,7 @@ export default function App() {
               <Route path="/shop/:productId" element={<ProductDetail />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/checkout" element={<Checkout />} />
-              <Route path="/maps" element={<Maps />} />
+              <Route path="/maps" element={<Navigate to="/become-member" replace />} />
               <Route path="/about" element={<About />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<SignUp />} />
