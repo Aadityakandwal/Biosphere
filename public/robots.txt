@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /profile/
+Disallow: /checkout
+Disallow: /login
+Disallow: /signup
+Disallow: /forgot-password
+
+Sitemap: https://mygardener.in/sitemap.xml
