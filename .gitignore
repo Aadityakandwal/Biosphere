@@ -3,6 +3,8 @@ node_modules/
 dist/
 dist-ssr/
 .wrangler/
+.temp/
+supabase/.temp/
 *.local
 
 # Environment & Secrets
