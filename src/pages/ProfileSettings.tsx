@@ -3,25 +3,33 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useTheme } from '@/lib/theme';
 import { authService } from '@/services';
 import { PageHeader } from '@/components/UI';
-import { ArrowLeft, User, Sun, Moon, Monitor, Shield, LogOut, ArrowRight, FileText, ArrowUpRight } from 'lucide-react';
+import { ArrowLeft, User, Sun, Moon, Monitor, Shield, LogOut, ArrowRight, FileText, ArrowUpRight, LogIn } from 'lucide-react';
 
 export default function ProfileSettings() {
   const navigate = useNavigate();
   const { theme, setTheme } = useTheme();
   const [email, setEmail] = useState('');
   const [signingOut, setSigningOut] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    let mounted = true;
     (async () => {
       try {
         const session = await authService.getSession();
-        if (session?.user) {
+        if (mounted && session?.user) {
           setEmail(session.user.email || '');
         }
       } catch (err) {
         console.error('Failed to get session:', err);
+      } finally {
+        if (mounted) setLoading(false);
       }
     })();
+
+    return () => {
+      mounted = false;
+    };
   }, []);
 
   const handleSignOut = async () => {
@@ -61,15 +69,31 @@ export default function ProfileSettings() {
           {/* 1. ACCOUNT SECTION */}
           <div className="glass-panel" style={{ padding: '32px', marginBottom: '28px' }}>
             <p className="eyebrow" style={{ marginBottom: '16px' }}>Account Information</p>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
-              <div>
-                <p style={{ fontSize: '15px', fontWeight: 600, color: 'var(--green)' }}>Primary Email</p>
-                <p style={{ fontSize: '13px', color: 'var(--muted)', marginTop: '2px' }}>{email || 'Signed in user'}</p>
+            {email ? (
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
+                <div>
+                  <p style={{ fontSize: '15px', fontWeight: 600, color: 'var(--green)' }}>Primary Email</p>
+                  <p style={{ fontSize: '13px', color: 'var(--muted)', marginTop: '2px' }}>{email}</p>
+                </div>
+                <Link to="/profile/edit" className="btn btn--outline" style={{ fontSize: '12px', padding: '8px 16px' }}>
+                  Edit Personal Info <ArrowRight size={13} />
+                </Link>
               </div>
-              <Link to="/profile/edit" className="btn btn--outline" style={{ fontSize: '12px', padding: '8px 16px' }}>
-                Edit Personal Info <ArrowRight size={13} />
-              </Link>
-            </div>
+            ) : (
+              <div>
+                <p className="body-copy" style={{ fontSize: '13.5px', marginBottom: '16px' }}>
+                  You are currently browsing as a guest. Sign in to manage your profile details, phone number, and address preferences.
+                </p>
+                <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+                  <Link to="/login" className="btn" style={{ fontSize: '12px', padding: '8px 18px' }}>
+                    Sign in <LogIn size={13} />
+                  </Link>
+                  <Link to="/signup" className="btn btn--outline" style={{ fontSize: '12px', padding: '8px 18px' }}>
+                    Create account
+                  </Link>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* 2. APPEARANCE SECTION */}
@@ -160,21 +184,34 @@ export default function ProfileSettings() {
           {/* 4. SECURITY & SESSION CONTROLS */}
           <div className="glass-panel" style={{ padding: '32px' }}>
             <p className="eyebrow" style={{ marginBottom: '16px' }}>Security &amp; Session</p>
-            <p className="body-copy" style={{ fontSize: '13.5px', marginBottom: '20px' }}>
-              Your session is securely encrypted with authentication tokens. Sign out if using a shared computer.
-            </p>
-            <button
-              type="button"
-              onClick={handleSignOut}
-              disabled={signingOut}
-              className="btn btn--outline"
-              style={{
-                borderColor: 'var(--terracotta)',
-                color: 'var(--terracotta)',
-              }}
-            >
-              <LogOut size={15} /> {signingOut ? 'Signing out…' : 'Sign Out of Account'}
-            </button>
+            {email ? (
+              <>
+                <p className="body-copy" style={{ fontSize: '13.5px', marginBottom: '20px' }}>
+                  Your session is securely encrypted with authentication tokens. Sign out if using a shared computer.
+                </p>
+                <button
+                  type="button"
+                  onClick={handleSignOut}
+                  disabled={signingOut}
+                  className="btn btn--outline"
+                  style={{
+                    borderColor: 'var(--terracotta)',
+                    color: 'var(--terracotta)',
+                  }}
+                >
+                  <LogOut size={15} /> {signingOut ? 'Signing out…' : 'Sign Out of Account'}
+                </button>
+              </>
+            ) : (
+              <>
+                <p className="body-copy" style={{ fontSize: '13.5px', marginBottom: '20px' }}>
+                  Sign in or create an account to secure your garden health logs, membership tier benefits, and order histories across all devices.
+                </p>
+                <Link to="/login" className="btn">
+                  Sign in to your account
+                </Link>
+              </>
+            )}
           </div>
 
         </div>

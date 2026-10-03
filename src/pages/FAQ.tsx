@@ -38,8 +38,8 @@ const FAQS: FAQItem[] = [
   },
   {
     category: 'Free Garden Check',
-    question: 'What is the eligibility rule for the Free Garden Check?',
-    answer: 'To ensure every household can experience our stewardship, exactly one Free Garden Check is allowed per registered phone number or email address.',
+    question: 'What are the eligibility and geographic boundaries for the Free Garden Check?',
+    answer: 'To ensure fair access across all neighborhoods, exactly one Free Garden Check is permitted per registered household, phone number, or email address. On-site visits are available within our active serviceable PIN codes and up to a 25 km operational radius from our city service hubs (Bengaluru, Delhi NCR, Mumbai, Hyderabad, Pune, and Chennai). Locations beyond active coverage can receive a complimentary virtual video consultation.',
   },
 
   // 3. Memberships

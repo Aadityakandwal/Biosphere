@@ -29,7 +29,7 @@ export default function Membership() {
       try {
         const session = await authService.getSession();
         if (session?.user?.id) {
-          const m = await membershipsService.getMembership(session.user.id);
+          const m = await membershipsService.getActiveMembership(session.user.id);
           if (mounted && m && m.status === 'active') {
             setCurrentPlanId(m.plan_id);
           }

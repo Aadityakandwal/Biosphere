@@ -125,11 +125,12 @@ export default function Terms() {
           <section className="legal-section" id="free-garden-check">
             <h2>5. Free Garden Check</h2>
             <p>
-              The Free Garden Check is a ₹0 introductory garden walkthrough and assessment designed to inspect plant condition, space layout, and care requirements.
+              The Free Garden Check is a ₹0 introductory on-site garden walkthrough and assessment designed to inspect plant health, sunlight exposure, soil conditions, and care requirements.
             </p>
             <ul className="legal-list">
-              <li><strong>Eligibility:</strong> Limited to one Free Garden Check per phone number, email address, or physical premises.</li>
-              <li><strong>Informational Nature:</strong> The Free Garden Check provides an initial assessment and care recommendations; it does not constitute a comprehensive physical overhaul or guarantee specific plant revival outcomes.</li>
+              <li><strong>Geographic &amp; Logistical Boundaries:</strong> Free Garden Checks are valid exclusively within designated active service PIN codes and within a maximum operational travel radius of 25 km from My Gardener urban service centers (Bengaluru, Delhi NCR, Mumbai, Hyderabad, Pune, Chennai). Locations beyond active service boundaries, unserviceable postal PIN codes, or remote premises requiring extended travel are not eligible for complimentary on-site dispatch (a complimentary digital/virtual consultation may be offered at our discretion).</li>
+              <li><strong>Household Eligibility:</strong> Strictly limited to one Free Garden Check per phone number, email address, or unique physical premises/household. Repeat claims for the same premises or contact credentials are not eligible.</li>
+              <li><strong>Informational Scope:</strong> The Free Garden Check provides an initial 45-minute observational evaluation and care recommendations; it does not constitute physical labor, comprehensive garden overhaul, soil replacement, or landscaping installation, nor does it guarantee specific botanical revival outcomes.</li>
             </ul>
           </section>
 

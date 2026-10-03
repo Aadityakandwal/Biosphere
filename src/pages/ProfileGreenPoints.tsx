@@ -58,13 +58,19 @@ export default function ProfileGreenPoints() {
 
   if (!signedIn) {
     return (
-      <div style={{ paddingTop: '96px', minHeight: '80vh' }}>
-        <div className="container">
+      <div style={{ paddingTop: '96px', minHeight: '80vh', display: 'flex', alignItems: 'center' }}>
+        <div className="container" style={{ maxWidth: '520px', textAlign: 'center' }}>
           <EmptyState
-            icon={<Award size={26} />}
+            icon={<Award size={28} />}
             title="Sign in to view your Green Points"
-            description="Your Green Points balance and rewards ledger are tied to your account."
-            action={<Link to="/login" className="btn">Sign in</Link>}
+            description="Your Green Points balance, rewards ledger, and monthly membership bonuses are tied to your account."
+            action={
+              <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
+                <Link to="/login" className="btn">Sign in</Link>
+                <Link to="/signup" className="btn btn--outline">Create account</Link>
+                <Link to="/membership" className="btn btn--outline">Care Memberships</Link>
+              </div>
+            }
           />
         </div>
       </div>

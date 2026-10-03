@@ -61,10 +61,10 @@ export default function Refunds() {
           <section className="legal-section" id="free-garden-check">
             <h2>3. Free Garden Check</h2>
             <p>
-              The Free Garden Check is a ₹0 introductory service. While no cancellation fee applies, we kindly request notice if you are unable to keep your scheduled appointment so another garden can be accommodated.
+              The Free Garden Check is a ₹0 introductory service valid within our active serviceable PIN codes and up to a 25 km operational radius from urban hubs. While no cancellation fee applies, we kindly request at least 4 hours advance notice if you need to reschedule or cancel so our horticulturists can be reassigned to another garden.
             </p>
             <p className="legal-subtext">
-              Each user/address is eligible for one Free Garden Check.
+              Each user, contact number, and physical household is eligible for exactly one Free Garden Check.
             </p>
           </section>
 

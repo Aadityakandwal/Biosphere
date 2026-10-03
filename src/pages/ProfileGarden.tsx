@@ -143,13 +143,19 @@ export default function ProfileGarden() {
 
   if (!signedIn) {
     return (
-      <div style={{ paddingTop: '96px', minHeight: '80vh' }}>
-        <div className="container">
+      <div style={{ paddingTop: '96px', minHeight: '80vh', display: 'flex', alignItems: 'center' }}>
+        <div className="container" style={{ maxWidth: '540px', textAlign: 'center' }}>
           <EmptyState
-            icon={<Leaf size={26} />}
+            icon={<Leaf size={28} />}
             title="Sign in to view My Garden"
-            description="Your garden records, documented plants and passport are tied to your account."
-            action={<Link to="/login" className="btn">Sign in</Link>}
+            description="Your botanical records, documented species, care passports, and plant doctor logs are securely stored in your personal account."
+            action={
+              <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
+                <Link to="/login" className="btn">Sign in</Link>
+                <Link to="/signup" className="btn btn--outline">Create account</Link>
+                <Link to="/free-check" className="btn btn--outline">Book Free Check</Link>
+              </div>
+            }
           />
         </div>
       </div>

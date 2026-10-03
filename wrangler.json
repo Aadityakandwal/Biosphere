@@ -3,6 +3,16 @@
   "name": "biosphere",
   "main": "src/worker.ts",
   "compatibility_date": "2024-09-23",
+  "routes": [
+    {
+      "pattern": "*.mygardener.me/*",
+      "zone_name": "mygardener.me"
+    },
+    {
+      "pattern": "mygardener.me/*",
+      "zone_name": "mygardener.me"
+    }
+  ],
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",

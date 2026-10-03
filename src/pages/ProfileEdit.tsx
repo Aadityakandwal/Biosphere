@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Check, User, Phone, Mail, MapPin, AlertCircle } from 'lucide-react';
 import { PageHeader } from '@/components/UI';
 import { authService, profilesService } from '@/services';
+import type { Profile } from '@/services';
 
 export default function ProfileEdit() {
   const navigate = useNavigate();

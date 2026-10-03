@@ -77,13 +77,19 @@ export default function ProfileMembership() {
 
   if (!signedIn) {
     return (
-      <div style={{ paddingTop: '96px', minHeight: '80vh' }}>
-        <div className="container">
+      <div style={{ paddingTop: '96px', minHeight: '80vh', display: 'flex', alignItems: 'center' }}>
+        <div className="container" style={{ maxWidth: '540px', textAlign: 'center' }}>
           <EmptyState
-            icon={<Award size={26} />}
-            title="Sign in to view your care plan"
-            description="Your care membership and scheduled stewardship visits are tied to your account."
-            action={<Link to="/login" className="btn">Sign in</Link>}
+            icon={<Award size={28} />}
+            title="Sign in to view your Care Plan"
+            description="Your active care membership tier, scheduled recurring visits, bio-tonic nutrition plans and priority benefits are tied to your account."
+            action={
+              <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
+                <Link to="/login" className="btn">Sign in</Link>
+                <Link to="/membership" className="btn btn--outline">Explore Plans</Link>
+                <Link to="/signup" className="btn btn--outline">Get Started</Link>
+              </div>
+            }
           />
         </div>
       </div>
