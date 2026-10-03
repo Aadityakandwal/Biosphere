@@ -128,7 +128,7 @@ export default function Terms() {
               The Free Garden Check is a ₹0 introductory on-site garden walkthrough and assessment designed to inspect plant health, sunlight exposure, soil conditions, and care requirements.
             </p>
             <ul className="legal-list">
-              <li><strong>Geographic &amp; Logistical Boundaries:</strong> Free Garden Checks are valid exclusively within designated active service PIN codes and within a maximum operational travel radius of 25 km from My Gardener urban service centers (Bengaluru, Delhi NCR, Mumbai, Hyderabad, Pune, Chennai). Locations beyond active service boundaries, unserviceable postal PIN codes, or remote premises requiring extended travel are not eligible for complimentary on-site dispatch (a complimentary digital/virtual consultation may be offered at our discretion).</li>
+              <li><strong>Geographic &amp; Logistical Boundaries:</strong> Free Garden Checks are valid exclusively within designated active service PIN codes and within a maximum operational travel radius of 25 km from My Gardener service hubs in Amritsar and surrounding Punjab territories (Ranjit Avenue, Mall Road, Cantonment, Majitha Road, GT Road Corridor, Batala, Tarn Taran, Jalandhar &amp; Ludhiana corridors). Locations beyond active service boundaries, unserviceable postal PIN codes, or remote premises requiring extended travel are not eligible for complimentary on-site dispatch (a complimentary digital/virtual consultation may be offered at our discretion).</li>
               <li><strong>Household Eligibility:</strong> Strictly limited to one Free Garden Check per phone number, email address, or unique physical premises/household. Repeat claims for the same premises or contact credentials are not eligible.</li>
               <li><strong>Informational Scope:</strong> The Free Garden Check provides an initial 45-minute observational evaluation and care recommendations; it does not constitute physical labor, comprehensive garden overhaul, soil replacement, or landscaping installation, nor does it guarantee specific botanical revival outcomes.</li>
             </ul>
@@ -359,7 +359,7 @@ export default function Terms() {
             <div style={{ marginTop: '16px' }}>
               <p><strong>Customer Support Email:</strong></p>
               <p style={{ margin: '4px 0 10px', fontSize: '14px', color: 'var(--green)' }}>
-                <a href="mailto:aadityakandwal2000@gmail.com" style={{ color: 'inherit', textDecoration: 'underline' }}>aadityakandwal2000@gmail.com</a>
+                <a href="mailto:concierge@mygardener.me" style={{ color: 'inherit', textDecoration: 'underline' }}>concierge@mygardener.me</a>
               </p>
               <p style={{ marginTop: '10px' }}><strong>Helpline:</strong></p>
               <p style={{ margin: '4px 0 10px', fontSize: '14px', color: 'var(--green)' }}>
@@ -367,7 +367,7 @@ export default function Terms() {
               </p>
               <p style={{ marginTop: '10px' }}><strong>Grievance Officer:</strong></p>
               <p style={{ margin: '4px 0 10px', fontSize: '14px', color: 'var(--ink)' }}>
-                Aaditya Kandwal (aadityakandwal2000@gmail.com)
+                Aaditya Kandwal (care@mygardener.me)
               </p>
             </div>
           </section>

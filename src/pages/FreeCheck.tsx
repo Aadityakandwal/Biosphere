@@ -149,7 +149,7 @@ export default function FreeCheck() {
                   <span className="eyebrow" style={{ margin: 0, fontSize: '11px' }}>Service Area &amp; Logistical Boundaries</span>
                 </div>
                 <p style={{ fontSize: '12.5px', color: 'var(--muted)', lineHeight: '1.6', margin: 0 }}>
-                  Complimentary on-site visits are available across our active metropolitan service zones (<strong>Bengaluru, Delhi NCR, Mumbai, Hyderabad, Pune, Chennai</strong>) within serviceable PIN codes up to a <strong>25 km operational radius</strong> from urban service centers. Strictly limited to <strong>one free check per physical household or registered contact</strong>. Out-of-zone locations are supported with a complimentary virtual video consultation.
+                  Complimentary on-site visits are available across our active <strong>Amritsar &amp; Punjab service zones</strong> (Ranjit Avenue, Mall Road, Cantonment, Majitha Road, GT Road Corridor, Batala, Tarn Taran, Jalandhar &amp; Ludhiana corridors) within eligible PIN codes up to a <strong>25 km operational radius</strong> from urban service hubs. Strictly limited to <strong>one free check per physical household or registered contact</strong>. Out-of-zone locations are supported with a complimentary virtual video consultation.
                 </p>
               </div>
             </div>
@@ -189,17 +189,17 @@ export default function FreeCheck() {
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
                 <div className="form-group">
                   <label className="form-label" htmlFor="fc-city">City / Region</label>
-                  <input type="text" id="fc-city" className="form-input" value={city} onChange={(e) => setCity(e.target.value)} placeholder="e.g. Bengaluru, Mumbai, Delhi" />
+                  <input type="text" id="fc-city" className="form-input" value={city} onChange={(e) => setCity(e.target.value)} placeholder="e.g. Amritsar, Jalandhar, Batala" />
                 </div>
                 <div className="form-group">
                   <label className="form-label" htmlFor="fc-pincode">Postal PIN code</label>
-                  <input type="text" id="fc-pincode" maxLength={6} className="form-input" value={pincode} onChange={(e) => setPincode(e.target.value.replace(/\D/g, ''))} placeholder="6-digit pincode" />
+                  <input type="text" id="fc-pincode" maxLength={6} className="form-input" value={pincode} onChange={(e) => setPincode(e.target.value.replace(/\D/g, ''))} placeholder="e.g. 143001" />
                 </div>
               </div>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', marginTop: '12px', padding: '12px 14px', borderRadius: '8px', background: 'rgba(0,0,0,0.03)', border: '1px solid var(--line-soft)' }}>
                 <ShieldCheck size={14} style={{ color: 'var(--green)', flexShrink: 0, marginTop: '2px' }} />
                 <p style={{ fontSize: '11.5px', color: 'var(--muted)', margin: 0, lineHeight: '1.4' }}>
-                  On-site dispatch is subject to serviceable PIN codes within our 25 km operational radius. One free check per household or registered phone/email.
+                  On-site dispatch is available across active PIN codes in Amritsar &amp; Punjab within our 25 km operational radius. One free check per household or registered phone/email.
                 </p>
               </div>
             </div>

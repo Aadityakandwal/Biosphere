@@ -68,7 +68,7 @@ export default function Support() {
                   <strong style={{ fontSize: '14px' }}>Customer Support Email</strong>
                 </div>
                 <a
-                  href="mailto:aadityakandwal2000@gmail.com"
+                  href="mailto:concierge@mygardener.me"
                   style={{
                     color: 'var(--green)',
                     fontSize: '14px',
@@ -78,7 +78,7 @@ export default function Support() {
                     wordBreak: 'break-all',
                   }}
                 >
-                  aadityakandwal2000@gmail.com
+                  concierge@mygardener.me
                 </a>
               </div>
 
@@ -117,7 +117,7 @@ export default function Support() {
                   <strong style={{ fontSize: '14px' }}>Grievance &amp; Escalations</strong>
                 </div>
                 <p style={{ margin: 0, fontSize: '13.5px', color: 'var(--ink)' }}>
-                  Aaditya Kandwal · <a href="mailto:aadityakandwal2000@gmail.com" style={{ color: 'var(--green)', textDecoration: 'underline' }}>aadityakandwal2000@gmail.com</a>
+                  Aaditya Kandwal · <a href="mailto:care@mygardener.me" style={{ color: 'var(--green)', textDecoration: 'underline' }}>care@mygardener.me</a>
                 </p>
               </div>
             </div>
@@ -125,7 +125,7 @@ export default function Support() {
             <div style={{ marginTop: '28px' }}>
               <p><strong>Privacy Inquiries &amp; Data Rights:</strong></p>
               <p style={{ fontSize: '13.5px', color: 'var(--muted)', marginTop: '4px' }}>
-                Direct all data protection and account inquiries to <a href="mailto:aadityakandwal2000@gmail.com" style={{ color: 'var(--green)', textDecoration: 'underline' }}>aadityakandwal2000@gmail.com</a>.
+                Direct all data protection and account inquiries to <a href="mailto:privacy@mygardener.me" style={{ color: 'var(--green)', textDecoration: 'underline' }}>privacy@mygardener.me</a>.
               </p>
             </div>
           </section>

@@ -123,8 +123,8 @@ export default function ProfileSupport() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px', marginBottom: '24px' }}>
               <div style={{ padding: '16px', background: 'rgba(247,241,232,0.1)', borderRadius: '6px' }}>
                 <p className="mono" style={{ fontSize: '10px', color: '#b9cbb4', marginBottom: '4px' }}>Support Email</p>
-                <a href="mailto:aadityakandwal2000@gmail.com" style={{ color: '#f7f1e8', fontSize: '13px', wordBreak: 'break-all', textDecoration: 'underline' }}>
-                  aadityakandwal2000@gmail.com
+                <a href="mailto:concierge@mygardener.me" style={{ color: '#f7f1e8', fontSize: '13px', wordBreak: 'break-all', textDecoration: 'underline' }}>
+                  concierge@mygardener.me
                 </a>
               </div>
               <div style={{ padding: '16px', background: 'rgba(247,241,232,0.1)', borderRadius: '6px' }}>

@@ -603,8 +603,8 @@ export default function Membership() {
                   </div>
 
                   <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginTop: '18px' }}>
-                    <a href="mailto:aadityakandwal2000@gmail.com" className="text-link" style={{ fontSize: '11px' }}>
-                      <Mail size={12} /> aadityakandwal2000@gmail.com
+                    <a href="mailto:concierge@mygardener.me" className="text-link" style={{ fontSize: '11px' }}>
+                      <Mail size={12} /> concierge@mygardener.me
                     </a>
                     <a href="tel:+918847688838" className="text-link" style={{ fontSize: '11px' }}>
                       <Phone size={12} /> +91 88476 88838

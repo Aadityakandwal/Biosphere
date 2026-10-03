@@ -286,7 +286,7 @@ export default function Privacy() {
               </p>
               <p style={{ marginTop: '10px' }}><strong>Email:</strong></p>
               <p style={{ margin: '4px 0 10px', fontSize: '14px', color: 'var(--green)' }}>
-                <a href="mailto:aadityakandwal2000@gmail.com" style={{ color: 'inherit', textDecoration: 'underline' }}>aadityakandwal2000@gmail.com</a>
+                <a href="mailto:privacy@mygardener.me" style={{ color: 'inherit', textDecoration: 'underline' }}>privacy@mygardener.me</a>
               </p>
               <p style={{ marginTop: '10px' }}><strong>Helpline:</strong></p>
               <p style={{ margin: '4px 0 10px', fontSize: '14px', color: 'var(--green)' }}>

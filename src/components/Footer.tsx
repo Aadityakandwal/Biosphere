@@ -15,7 +15,7 @@ export default function Footer() {
           </p>
           <div style={{ marginTop: '20px', display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '12px', color: 'var(--muted)' }}>
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
-              <Mail size={13} style={{ color: 'var(--green)' }} /> aadityakandwal2000@gmail.com
+              <Mail size={13} style={{ color: 'var(--green)' }} /> concierge@mygardener.me
             </span>
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
               <Phone size={13} style={{ color: 'var(--green)' }} /> +91 88476 88838

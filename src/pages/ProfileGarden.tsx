@@ -14,7 +14,7 @@ type GardenPassport = {
 
 const DEFAULT_PASSPORT: GardenPassport = {
   spaceType: 'Balcony & Indoor Garden',
-  city: 'Bengaluru',
+  city: 'Amritsar',
   sunlightExposure: 'Morning Direct Sunlight (East-facing)',
   notes: 'Potted foliage, herbs and flowering plants in terracotta planters.',
 };
@@ -215,7 +215,7 @@ export default function ProfileGarden() {
                       className="form-input"
                       value={passport.city}
                       onChange={(e) => setPassport({ ...passport, city: e.target.value })}
-                      placeholder="e.g. Bengaluru, Mumbai, Delhi"
+                      placeholder="e.g. Amritsar, Jalandhar, Batala"
                     />
                   </div>
                 </div>

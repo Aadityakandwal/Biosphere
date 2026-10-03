@@ -39,7 +39,7 @@ const FAQS: FAQItem[] = [
   {
     category: 'Free Garden Check',
     question: 'What are the eligibility and geographic boundaries for the Free Garden Check?',
-    answer: 'To ensure fair access across all neighborhoods, exactly one Free Garden Check is permitted per registered household, phone number, or email address. On-site visits are available within our active serviceable PIN codes and up to a 25 km operational radius from our city service hubs (Bengaluru, Delhi NCR, Mumbai, Hyderabad, Pune, and Chennai). Locations beyond active coverage can receive a complimentary virtual video consultation.',
+    answer: 'To ensure fair access across all neighborhoods, exactly one Free Garden Check is permitted per registered household, phone number, or email address. On-site visits are available within our active serviceable PIN codes in Amritsar and surrounding Punjab regions (Ranjit Avenue, Mall Road, Cantonment, Majitha Road, GT Road Corridor, Batala, Tarn Taran, Jalandhar & Ludhiana corridors) up to a 25 km operational radius from service hubs. Locations beyond active coverage can receive a complimentary virtual video consultation.',
   },
 
   // 3. Memberships
@@ -63,7 +63,7 @@ const FAQS: FAQItem[] = [
   {
     category: 'Bookings',
     question: 'Can I reschedule an upcoming visit?',
-    answer: 'Yes. Please contact our support team at least 24 hours prior to your scheduled slot via phone (+91 88476 88838) or email (aadityakandwal2000@gmail.com) to reschedule without any cancellation fee.',
+    answer: 'Yes. Please contact our concierge team at least 24 hours prior to your scheduled slot via phone (+91 88476 88838) or email (concierge@mygardener.me) to reschedule without any cancellation fee.',
   },
 
   // 5. Shop & Delivery

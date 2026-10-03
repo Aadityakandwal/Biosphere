@@ -64,11 +64,15 @@ export default function ServiceDetail() {
               <Link to={`/book/${service.id}`} className="btn btn--lg w-full" style={{ marginTop: '32px' }}>
                 Book this service <ArrowUpRight size={16} />
               </Link>
-              {service.price === 0 && (
+              {service.price === 0 ? (
                 <p style={{ fontSize: '11px', color: 'var(--muted)', marginTop: '14px', textAlign: 'center' }}>
-                  One free check per registered phone or email.
+                  One free check per registered phone or email in Amritsar &amp; Punjab.
                 </p>
-              )}
+              ) : service.price < 499 && service.id !== 'video-consultation' ? (
+                <p style={{ fontSize: '11px', color: 'var(--muted)', marginTop: '14px', textAlign: 'center' }}>
+                  A la carte visit — Min. standalone dispatch value: ₹499 (or add to any maintenance session).
+                </p>
+              ) : null}
             </div>
           </div>
         </div>
