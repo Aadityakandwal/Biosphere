@@ -106,18 +106,20 @@ export default function Navbar({ onOpenSearch }: { onOpenSearch?: () => void }) 
           </nav>
 
           <div className="navbar-actions">
-            {/* Search Trigger Button */}
+            {/* Search Trigger Button with ⌘K Badge */}
             <button
-              className="icon-btn search-trigger-btn"
+              className="navbar-search-pill"
               onClick={handleOpenSearch}
               aria-label="Search content (Ctrl+K)"
-              title="Search (Ctrl+K)"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+              title="Search (Ctrl+K or ⌘K)"
             >
-              <Search size={15} />
-              <span className="search-shortcut mono" style={{ fontSize: '9px', opacity: 0.7, padding: '2px 4px', border: '1px solid var(--line)', borderRadius: '3px' }}>
-                ⌘K
+              <Search size={14} style={{ color: 'var(--green)' }} />
+              <span className="navbar-search-text" style={{ fontSize: '11.5px', color: 'var(--muted)' }}>
+                Search...
               </span>
+              <kbd className="search-shortcut mono" style={{ fontSize: '9px', opacity: 0.8, padding: '2px 5px', border: '1px solid var(--line)', borderRadius: '4px', background: 'var(--line-soft)', color: 'var(--ink)' }}>
+                ⌘K
+              </kbd>
             </button>
 
             <button

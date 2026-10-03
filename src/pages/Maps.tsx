@@ -121,7 +121,7 @@ export default function Maps() {
         <div className="container">
           {/* Glass Search and Category rail */}
           <div className="reveal-init" style={{ display: 'flex', gap: '20px', alignItems: 'center', flexWrap: 'wrap', marginBottom: '28px' }}>
-            <div style={{ position: 'relative', flex: '1', minWidth: '240px' }}>
+            <div className="search-input-wrapper">
               <Search
                 size={16}
                 style={{
@@ -140,6 +140,7 @@ export default function Maps() {
                   borderRadius: '9999px',
                   background: 'var(--glass-pill-bg)',
                   backdropFilter: 'blur(10px)',
+                  transition: 'all 0.25s ease',
                 }}
                 placeholder="Search green spaces by name or area…"
                 value={query}
@@ -147,7 +148,7 @@ export default function Maps() {
                 onKeyDown={(e) => e.key === 'Enter' && searchPlaces()}
               />
             </div>
-            <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+            <div className="category-scroll-row">
               {categories.map((cat) => (
                 <button
                   key={cat}

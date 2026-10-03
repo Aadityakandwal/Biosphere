@@ -228,35 +228,21 @@ export default function ProductDetail() {
                   <Link
                     key={rel.id}
                     to={`/shop/${rel.id}`}
-                    className="glass-panel"
-                    style={{
-                      display: 'flex',
-                      flexDirection: 'column',
-                      borderRadius: '12px',
-                      overflow: 'hidden',
-                      border: '1px solid var(--line)',
-                      background: 'var(--paper)',
-                      textDecoration: 'none',
-                      color: 'inherit',
-                      transition: 'transform 0.2s ease, border-color 0.2s ease',
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.borderColor = 'var(--green)';
-                      e.currentTarget.style.transform = 'translateY(-3px)';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.borderColor = 'var(--line)';
-                      e.currentTarget.style.transform = 'translateY(0)';
-                    }}
+                    className="product-card"
                   >
-                    <div style={{ aspectRatio: '1', overflow: 'hidden', background: 'var(--line-soft)' }}>
-                      <img src={rel.image} alt={rel.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <div className="product-card-image-wrap">
+                      <img
+                        src={rel.image}
+                        alt={rel.name}
+                        className="product-card-image"
+                        loading="lazy"
+                      />
+                      <div className="glass-overlay-tag" style={{ bottom: '12px', right: '12px' }}>
+                        <span>{rel.category}</span>
+                      </div>
                     </div>
                     <div style={{ padding: '18px 20px', display: 'flex', flexDirection: 'column', flex: 1 }}>
-                      <span className="mono" style={{ fontSize: '9.5px', color: 'var(--terracotta)', textTransform: 'uppercase', marginBottom: '4px' }}>
-                        {rel.category}
-                      </span>
-                      <h4 style={{ fontSize: '15px', fontWeight: 600, marginBottom: '8px', color: 'var(--ink)' }}>{rel.name}</h4>
+                      <h4 style={{ fontSize: '15px', fontWeight: 600, marginBottom: '6px', color: 'var(--ink)' }}>{rel.name}</h4>
                       <p style={{ fontSize: '12px', color: 'var(--muted)', lineHeight: '1.5', marginBottom: '16px', flex: 1 }}>
                         {rel.description}
                       </p>
@@ -264,8 +250,8 @@ export default function ProductDetail() {
                         <span className="mono" style={{ fontSize: '15px', color: 'var(--terracotta)', fontWeight: 600 }}>
                           ₹{rel.price}
                         </span>
-                        <span style={{ fontSize: '11px', color: 'var(--green)', fontWeight: 500, display: 'flex', alignItems: 'center', gap: '4px' }}>
-                          View <ArrowRight size={12} />
+                        <span className="text-link" style={{ fontSize: '11px', borderBottom: 'none' }}>
+                          View details <ArrowRight size={12} />
                         </span>
                       </div>
                     </div>
