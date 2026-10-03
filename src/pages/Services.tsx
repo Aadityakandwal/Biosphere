@@ -16,8 +16,12 @@ export default function Services() {
       {serviceCategories.map((category, idx) => (
         <section
           key={category.id}
+          id={category.id}
           className={idx === 0 ? '' : 'section'}
-          style={idx === 0 ? { paddingBottom: 'clamp(80px, 12vw, 144px)' } : { paddingTop: 0 }}
+          style={{
+            scrollMarginTop: '100px',
+            ...(idx === 0 ? { paddingBottom: 'clamp(80px, 12vw, 144px)' } : { paddingTop: 0 }),
+          }}
         >
           <div className="container">
             {idx > 0 && <div className="divider" style={{ marginBottom: 'clamp(80px, 12vw, 144px)' }} />}

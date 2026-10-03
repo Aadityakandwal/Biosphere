@@ -6,10 +6,30 @@ import { products } from '@/data/products';
 import { plans } from '@/data/plans';
 
 const ecosystemItems = [
-  ['01', 'Professional care', 'Hands-on attention for the garden you live with.'],
-  ['02', 'Plant health', 'Clear guidance when a leaf starts to tell a story.'],
-  ['03', 'Garden management', 'One calm, considered record of your garden.'],
-  ['04', 'Garden essentials', 'Thoughtful products chosen for better growth.'],
+  {
+    number: '01',
+    title: 'Professional care',
+    copy: 'Hands-on attention for the garden you live with.',
+    to: '/services#basic-maintenance',
+  },
+  {
+    number: '02',
+    title: 'Plant health',
+    copy: 'Clear guidance when a leaf starts to tell a story.',
+    to: '/services#garden-care',
+  },
+  {
+    number: '03',
+    title: 'Garden management',
+    copy: 'One calm, considered record of your garden.',
+    to: '/membership',
+  },
+  {
+    number: '04',
+    title: 'Garden essentials',
+    copy: 'Thoughtful products chosen for better growth.',
+    to: '/shop',
+  },
 ];
 
 const previewProducts = products.slice(0, 4);
@@ -33,8 +53,8 @@ export default function Home() {
             </p>
           </div>
           <div className="eco-list reveal-init" data-delay="2">
-            {ecosystemItems.map(([number, title, copy]) => (
-              <Link className="eco-item" to="/services" key={number}>
+            {ecosystemItems.map(({ number, title, copy, to }) => (
+              <Link className="eco-item" to={to} key={number}>
                 <span className="eco-number">{number}</span>
                 <span className="eco-text">
                   <strong>{title}</strong>
